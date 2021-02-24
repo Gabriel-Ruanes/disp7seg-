@@ -2513,7 +2513,7 @@ void display7seg_init (void)
     PORTD = 0;
 }
 
-void display7seg ( unsigned char c )
+void display7seg ( int c )
 {
-    PORTD = c;
+    PORTD = vetor[c];
 }
