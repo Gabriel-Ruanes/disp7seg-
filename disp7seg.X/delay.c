@@ -1,6 +1,6 @@
 /*
  * File:   delay.c
- * Author: 21192694
+ * Author: Gabriel Ruanes Melquiades
  *
  * Created on 18 de Fevereiro de 2021, 15:59
  */
