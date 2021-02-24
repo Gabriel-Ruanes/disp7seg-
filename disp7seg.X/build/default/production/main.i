@@ -2547,8 +2547,8 @@ void main(void)
     {
         display7seg ( cont );
         delay ( 1000 );
-        cont++;
-        if ( cont >= 16 )
+
+        if ( ++cont >= 16 )
             cont = 0;
     }
 }

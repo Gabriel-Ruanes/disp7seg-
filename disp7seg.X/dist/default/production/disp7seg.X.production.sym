@@ -144,7 +144,7 @@ text2 EF0 F01 CODE EF0 0
 text1 EE2 EEF CODE EE2 0
 %locals
 dist/default/production\disp7seg.X.production.o
-C:\Users\21192694\AppData\Local\Temp\sdbc.
+C:\Users\21192694\AppData\Local\Temp\s3gg.
 773 7EE 0 CODE 0
 776 7EE 0 CODE 0
 817 7EE 0 CODE 0
@@ -183,8 +183,7 @@ main.c
 19 7C1 0 CODE 0
 21 7C1 0 CODE 0
 22 7CA 0 CODE 0
-23 7D3 0 CODE 0
-24 7D9 0 CODE 0
+24 7D3 0 CODE 0
 25 7E6 0 CODE 0
 26 7EA 0 CODE 0
 27 7EB 0 CODE 0

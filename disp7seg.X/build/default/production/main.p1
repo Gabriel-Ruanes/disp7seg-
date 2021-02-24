@@ -294,12 +294,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22
 [; ;main.c: 22:         delay ( 1000 );
 [e ( _delay (1 -> -> 1000 `i `ui ]
-"23
-[; ;main.c: 23:         cont++;
-[e ++ _cont -> 1 `i ]
 "24
-[; ;main.c: 24:         if ( cont >= 16 )
-[e $ ! >= _cont -> 16 `i 142  ]
+[; ;main.c: 24:         if ( ++cont >= 16 )
+[e $ ! >= =+ _cont -> 1 `i -> 16 `i 142  ]
 "25
 [; ;main.c: 25:             cont = 0;
 [e = _cont -> 0 `i ]
