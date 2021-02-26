@@ -7,6 +7,7 @@
       <itemPath>delay.h</itemPath>
       <itemPath>config.h</itemPath>
       <itemPath>display7seg.h</itemPath>
+      <itemPath>botao.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,6 +19,7 @@
       <itemPath>delay.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>display7seg.c</itemPath>
+      <itemPath>botao.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

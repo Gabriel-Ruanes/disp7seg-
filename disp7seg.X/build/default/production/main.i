@@ -2537,18 +2537,38 @@ void display7seg_init (void);
 void display7seg ( int c );
 # 12 "main.c" 2
 
+# 1 "./botao.h" 1
+
+
+
+void botao_init ( void );
+char b1 ( void );
+char b2 ( void );
+# 13 "main.c" 2
+
 
 void main(void)
 {
-    int cont;
+    char cont = 0;
     display7seg_init();
+    botao_init();
 
     while ( 1 )
     {
-        display7seg ( cont );
-        delay ( 1000 );
-
-        if ( ++cont >= 16 )
+        display7seg(cont);
+        if ( b1() == 1 && ++cont >= 10 )
+        {
             cont = 0;
+        }
+            while ( b1() == 1 )
+                display7seg (cont);
+
+
+        if ( b2() == 1 && --cont <= 0 )
+        {
+            cont = 9;
+        }
+            while ( b2() == 1 )
+                display7seg (cont);
     }
 }

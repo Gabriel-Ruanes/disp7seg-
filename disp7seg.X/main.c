@@ -10,17 +10,28 @@
 #include "config.h"
 #include "delay.h"
 #include "display7seg.h"
+#include "botao.h"
 
 void main(void) 
 {
-    int cont;
+    char cont = 0;
     display7seg_init();
+    botao_init();
     
     while ( 1 )
     {
-        display7seg ( cont );
-        delay ( 1000 );
-         if ( ++cont >= 16 )
+        display7seg(cont);        
+        if ( b1() == 1 && ++cont >= 10 )
+        {
             cont = 0;
+        }
+            while ( b1() == 1 )
+                display7seg (cont);
+        
+        
+        if ( b2() == 1 && --cont <= 0 )
+        {
+            cont = 9;
+        }
     }
 }
