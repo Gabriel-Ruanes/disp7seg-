@@ -2568,7 +2568,5 @@ void main(void)
         {
             cont = 9;
         }
-            while ( b2() == 1 )
-                display7seg (cont);
     }
 }
